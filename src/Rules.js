@@ -78,6 +78,7 @@ class SmallStraight extends Rule {
     // console.log(d);
     // console.log(d.size);
     // console.log(this.score);
+    // console.log(dice);
   };
 
 }

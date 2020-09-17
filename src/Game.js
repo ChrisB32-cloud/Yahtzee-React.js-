@@ -51,7 +51,7 @@ class Game extends Component {
 
     setTimeout(() => {
       this.setState({ animationRoll: false });
-    }, 500)
+    }, 1000)
 
   }
 
@@ -97,8 +97,13 @@ class Game extends Component {
 
   }
 
+  // componentDidMount() {
+  //   window.addEventListener('load', this.roll);
+  // }
+
   render() {
     // console.log(this.state.scores);
+
     this.sunTotalScore()
     return (
       <div className='Game'>
@@ -119,7 +124,7 @@ class Game extends Component {
                 disabled={this.state.locked.every(x => x)}
                 onClick={this.roll}
               >
-                {this.state.rollsLeft} Rerolls Left
+                {this.state.rollsLeft} ReRolls Left
               </button>
             </div>
           </section>

@@ -74,7 +74,8 @@ class SmallStraight extends Rule {
   // TODO
   evalRoll = dice => {
     const d = new Set(dice);
-    return d.size === 4 && (!d.has(1) || !d.has(5) || !d.has(2) || !d.has(6)) ? this.score : 0;
+    return d.size === 4 && (!d.has(1) || !d.has(5) || !d.has(2) || !d.has(4) || !d.has(6)) ? this.score : 0;
+    // return d.size === 4 && (!d.has(2) || !d.has(4)) ? this.score : 0;
     // console.log(d);
     // console.log(d.size);
     // console.log(this.score);

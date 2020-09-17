@@ -124,7 +124,7 @@ class Game extends Component {
                 disabled={this.state.locked.every(x => x)}
                 onClick={this.roll}
               >
-                {this.state.rollsLeft} ReRolls Left
+                {this.state.rollsLeft} Rolls Left
               </button>
             </div>
           </section>

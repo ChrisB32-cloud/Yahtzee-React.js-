@@ -29,10 +29,7 @@ class RuleRow extends Component {
   }
 
   render() {
-    // console.log(this.props.passLock);
-    // console.log(this.state.fieldDisabled);
-    // { this.state.fieldDisabled === false ? this.props.doScore() : '' }
-    // console.log(this.props.score);
+
     return (
       <tr
         className={`${this.state.fieldDisabled === false ? "RuleRow RuleRow-active" : "RuleRow RuleRow-disabled"}`}
